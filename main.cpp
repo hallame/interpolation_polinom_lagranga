@@ -8,6 +8,12 @@ using namespace std;
 double
 Polinom_Lagranja (double *x, double *y, int N, double x0)
 {
+
+// *x the value of the argument
+  // *y the value of the function
+  // N the depth of the partition
+  // x0 the point at which the polynomial is calculated
+
   double result = 0.0;
   double P = 1.0;
   for (int i = 0; i < N; i++)
@@ -21,7 +27,7 @@ Polinom_Lagranja (double *x, double *y, int N, double x0)
   return result;
 }
 
-// Variante 19
+// Variante 19   // function
 double
 myFunction (double x)
 {
