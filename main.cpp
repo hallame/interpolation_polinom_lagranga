@@ -44,9 +44,9 @@ main ()
   cout << "Enter the depth of the partition N(N > 1) :";
   cin >> N;
 
-  int M = 3 * N;		// smaller partitioning
+  int M = 3 * N;	                 // smaller partitioning
 
-  double step = (x2 - x1) / N;	    // step for points
+  double step = (x2 - x1) / N;	        // step for points
   double *xn = new double[N + 1];	//array of x values
   double *yn = new double[N + 1];	//array of y values
   double *xm = new double[M + 1];	//array of x values
@@ -84,7 +84,7 @@ main ()
       xnn = xnn + step;
     }
 
-  step = (x2 - x1) / M;		// changing the step
+  step = (x2 - x1) / M;		                                                                       // step changing
   cout << endl;
   for (int i = 0; i <= M; i++)
     {
